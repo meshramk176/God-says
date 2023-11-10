@@ -1,5 +1,5 @@
 var bibleVerses = [
-    "Genesis 1:1", "John 3:16", 
+    " For I know the plans I have for you,” declares the Lord, “plans to prosper you and not to harm you, plans to give you hope and a future. -Jeremiah 29:11", 
     // Add more verses here
 ];
 
