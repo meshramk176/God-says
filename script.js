@@ -28,7 +28,10 @@ document.addEventListener('DOMContentLoaded', function () {
             var randomIndex = Math.floor(Math.random() * bibleVerses.length);
             var verseDisplay = document.getElementById('verseDisplay');
             var followUpQuestions = document.getElementById('followUpQuestions');
-            verseDisplay.innerText = "Hi " + name + ", God says that " + bibleVerses[randomIndex];
+        
+            // Use innerHTML and add a <br> tag for the line break
+            verseDisplay.innerHTML = "Hi " + name + ",<br>God says that " + bibleVerses[randomIndex];
+        
             verseDisplay.style.display = "block";
             setTimeout(function () { // Wait for the verse to fade in
                 verseDisplay.style.opacity = 1;
