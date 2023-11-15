@@ -4,30 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personalized Bible Verse</title>
+    <!-- Google Fonts for modern typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <!-- Your existing stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
-<head>
-    ...
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    ...
-</head>
 <body>
+    <!-- Hero section for visual impact -->
     <div class="hero">
-        <!-- Hero content goes here -->
+        <h1>Welcome to God's Word</h1>
     </div>
 
-    <!-- Rest of the body content -->
-    ...
-    
-    <script src="script.js"></script>
-</body>  
-<body>
+    <!-- Input section for name entry -->
     <div id="nameInputSection" class="input-section">
         <input type="text" id="nameInput" placeholder="Enter Your Name" required>
         <button onclick="displayVerseWithName()">Submit</button>
     </div>
+
+    <!-- Verse display section, initially hidden -->
     <div id="verseDisplay" class="verse-container" style="display:none;"></div>
+
+    <!-- Link to your JavaScript file -->
     <script src="script.js"></script>
 </body>
 </html>
