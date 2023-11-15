@@ -12,7 +12,7 @@ body {
 .hero {
     background-color: #f8f8f8; /* Light grey for a subtle header background */
     color: #333333; /* Keeping text dark for readability */
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 40px 20px; /* More padding for a spacious look */
     margin-bottom: 50px; /* More space below the hero section */
 }
