@@ -39,6 +39,26 @@ body {
     margin-bottom: 40px; /* More space above the verse container */
 }
 
+.follow-up {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #367B37; /* Darker green on hover */
+}
+
 /* Unified styles for input and button */
 .contact-form input,
 .contact-form button,
