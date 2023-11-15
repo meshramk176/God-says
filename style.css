@@ -3,29 +3,29 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 20px;
-    background: #FAF3DD; /* Pastel beige background */
-    color: #59656F; /* Soft grey for text, ensures good contrast */
+    background: #ffffff; /* Clean white background */
+    color: #333333; /* Darker text for contrast and readability */
     margin: 0;
 }
 
 /* Hero section */
 .hero {
-    /* Assuming you have a background image; if not, use a pleasant pastel shade */
-    background-color: #E3E2DF; /* Pastel background color for the hero section if no image */
-    color: #5D5C61; /* Darker text to stand out */
-    font-size: 2.5em;
-    margin-bottom: 30px; /* Add more space below the hero section */
+    background-color: #f8f8f8; /* Light grey for a subtle header background */
+    color: #333333; /* Keeping text dark for readability */
+    font-size: 2em;
+    padding: 40px 20px; /* More padding for a spacious look */
+    margin-bottom: 50px; /* More space below the hero section */
 }
 
 /* The container that displays the Bible verse */
 .verse-container {
-    background: #e2f0cb; /* Pastel green */
-    color: #495057; /* Soft dark gray for text */
+    background: #ffffff; /* Keeping it clean and white */
+    color: #333333; /* Dark grey text */
     margin: 20px auto;
-    font-size: 1.2rem;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    padding: 25px;
+    border-radius: 5px; /* Less rounded for a sharper look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter shadow for subtlety */
     max-width: 600px;
     display: none;
     opacity: 0;
@@ -34,73 +34,64 @@ body {
 
 /* Styles for the input box */
 #nameInput {
-    border: 2px solid #E8E8E8; /* Light border for the input */
-    background-color: #FFFFFF; /* White background for the input */
-    margin-bottom: 20px; /* Add space below the input box */
+    border: 1px solid #cccccc; /* Subtle border for the input */
+    background-color: #f8f8f8; /* Light grey to distinguish input area */
+    margin-bottom: 25px; /* Spacious layout */
+    padding: 12px 20px; /* Comfortable padding */
 }
 
 /* Styles for the button */
 button {
-    background-color: #B8B5FF; /* Pastel purple */
-    color: #FFF;
+    background-color: #4CAF50; /* A vibrant green for contrast and attention */
+    color: #ffffff;
     font-weight: bold;
     border: none;
-    border-radius: 20px;
-    box-shadow: 0px 3px 6px #00000029; /* Soft shadow for depth */
-    transition: all 0.3s ease;
+    border-radius: 25px; /* Fully rounded edges for a modern pill shape */
+    padding: 12px 30px; /* Generous padding for a clickable area */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    transition: background-color 0.3s ease;
+    cursor: pointer; /* Make it clear the button is clickable */
 }
 
 /* Hover and focus styles for button for interactivity */
-
-button:hover {
-    background-color: #A5A3BB; /* A slightly darker shade for the hover state */
-}
-
-/* Styles for the verse container */
-.verse-container {
-    background-color: #FFEE93; /* Pastel yellow for the card */
-    box-shadow: 0px 8px 15px #0000001A; /* Soft shadow for depth */
-    border-radius: 15px;
-    padding: 30px;
-    margin-top: 30px; /* Add space above the verse container */
-    font-size: 1.2em;
+button:hover, button:focus {
+    background-color: #3E8E41; /* Darken the green on hover/focus for feedback */
+    outline: none; /* Remove the outline to maintain the sleek look */
 }
 
 /* Styles for the follow-up section */
 .follow-up {
-    background-color: #E4C1F9; /* Pastel lilac for follow-up section */
-    padding: 20px;
-    margin-top: 30px; /* Add space above the follow-up section */
-    border-radius: 15px;
-    box-shadow: 0px 8px 15px #0000001A;
+    background-color: #f8f8f8; /* Light grey to keep it soft and clean */
+    padding: 25px;
+    margin-top: 40px;
+    border-radius: 5px; /* Consistent with the verse container */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Styles for the follow-up button */
 .follow-up .button {
-    background-color: #D5ECC2; /* Pastel green */
-    color: #FFF;
+    background-color: #4CAF50; /* Same vibrant green for consistency */
     padding: 10px 25px;
-    border-radius: 20px;
-    margin-top: 20px;
+    border-radius: 25px; /* Pill shape */
+    margin-top: 25px;
 }
 
 .follow-up .button:hover {
-    background-color: #A5A3BB; /* A slightly darker shade for the hover state */
+    background-color: #3E8E41; /* Same hover effect for consistency */
 }
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .hero {
-        height: 30vh;
+        padding: 30px 20px; /* Adjust padding for mobile */
+        margin-bottom: 40px; /* Adjust bottom margin for mobile */
     }
 
     .verse-container,
-    .contact-form input,
-    .contact-form button,
     #nameInput,
     button,
     .follow-up {
-        width: 100%;
-        border-radius: 10px; /* Adjust border-radius for mobile */
+        width: 90%; /* Slightly less than full width for a better look on mobile */
+        border-radius: 5px; /* Keep the sharp look on mobile */
     }
 }
