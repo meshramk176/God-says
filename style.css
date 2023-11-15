@@ -1,10 +1,10 @@
 /* Base styles */
 body {
-    font-family: 'Open Sans', sans-serif; /* Modern font */
+    font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 20px;
-    background: #f5f5f5; /* Light grey background for a modern look */
-    color: #333; /* Dark grey text for readability */
+    background: #f8f9fa; /* Light pastel background */
+    color: #495057; /* Soft dark gray for text */
     margin: 0;
 }
 
@@ -13,50 +13,29 @@ body {
     background-image: url('path-to-your-hero-image.jpg'); /* Add your hero image path */
     background-size: cover;
     background-position: center;
-    height: 50vh; /* Adjust this value to suit your design */
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white; /* White text for contrast against a likely dark image */
+    color: #f8f9fa; /* Light pastel color for text for contrast against a dark image */
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
 }
 
 /* The container that displays the Bible verse */
 .verse-container {
-    margin: 20px auto; /* Centered with automatic horizontal margins */
-    font-size: 24px; /* Slightly larger font for importance */
-    background: white; /* White background to stand out from the body */
+    background: #e2f0cb; /* Pastel green */
+    color: #495057; /* Soft dark gray for text */
+    margin: 20px auto;
+    font-size: 1.2rem;
     padding: 20px;
-    border-radius: 8px; /* Rounded corners for a modern look */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    max-width: 600px; /* Max width for readability on wider screens */
-    display: none; /* Hidden by default */
-    opacity: 0; /* Prepare for fade-in effect */
-    transition: opacity 2s ease; /* Smooth transition for the fade-in effect */
-}
-
-/* Style adjustments for the input section */
-.input-section {
-    margin-bottom: 40px; /* More space above the verse container */
-}
-
-.follow-up {
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-}
-
-.button {
-    display: inline-block;
-    background-color: #4CAF50; /* Green background */
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #367B37; /* Darker green on hover */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease;
 }
 
 /* Unified styles for input and button */
@@ -64,34 +43,64 @@ body {
 .contact-form button,
 #nameInput,
 button {
+    background: #fff; /* White background */
+    color: #495057; /* Soft dark gray for text */
+    border: 1px solid #ced4da; /* Border color */
     margin: 10px 0;
-    padding: 15px; /* Increased padding for a better touch target size */
-    width: 90%; /* A bit wider for a modern look */
-    max-width: 400px; /* Larger max-width for better use of space */
-    border: none; /* Remove default borders */
-    border-radius: 4px; /* Slightly rounded corners */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Consistent with the verse-container */
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 20px; /* More pronounced rounded corners for a modern look */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover and focus styles for button for interactivity */
 button:hover,
 button:focus {
-    background-color: #4CAF50; /* A pleasant green */
-    color: white; /* Ensure text is readable on the new background */
-    outline: none; /* Remove the default focus outline */
+    background-color: #b8d8d8; /* Pastel blue for hover state */
+    color: #495057;
+    outline: none;
+}
+
+/* Follow-up questions section */
+.follow-up {
+    background: #fef7dd; /* Pastel yellow */
+    color: #495057;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+/* Button in the follow-up section */
+.button {
+    background-color: #ffafcc; /* Pastel pink */
+    color: #495057;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #ffc8dd; /* A lighter shade of pastel pink on hover */
 }
 
 /* Responsive design adjustments */
 @media (max-width: 768px) {
     .hero {
-        height: 30vh; /* Shorter hero section on smaller screens */
+        height: 30vh;
     }
 
     .verse-container,
     .contact-form input,
     .contact-form button,
     #nameInput,
-    button {
-        width: 100%; /* Full width on smaller screens */
+    button,
+    .follow-up {
+        width: 100%;
+        border-radius: 10px; /* Adjust border-radius for mobile */
     }
 }
