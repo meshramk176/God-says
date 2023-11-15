@@ -3,24 +3,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
     padding: 20px;
-    background: #f8f9fa; /* Light pastel background */
-    color: #495057; /* Soft dark gray for text */
+    background: #FAF3DD; /* Pastel beige background */
+    color: #59656F; /* Soft grey for text, ensures good contrast */
     margin: 0;
 }
 
 /* Hero section */
 .hero {
-    background-image: url('path-to-your-hero-image.jpg'); /* Add your hero image path */
-    background-size: cover;
-    background-position: center;
-    height: 50vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #f8f9fa; /* Light pastel color for text for contrast against a dark image */
-    font-size: 2rem;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Text shadow for better readability */
+    /* Assuming you have a background image; if not, use a pleasant pastel shade */
+    background-color: #E3E2DF; /* Pastel background color for the hero section if no image */
+    color: #5D5C61; /* Darker text to stand out */
+    font-size: 2.5em;
+    margin-bottom: 30px; /* Add more space below the hero section */
 }
 
 /* The container that displays the Bible verse */
@@ -38,54 +32,60 @@ body {
     transition: opacity 2s ease;
 }
 
-/* Unified styles for input and button */
-.contact-form input,
-.contact-form button,
-#nameInput,
+/* Styles for the input box */
+#nameInput {
+    border: 2px solid #E8E8E8; /* Light border for the input */
+    background-color: #FFFFFF; /* White background for the input */
+    margin-bottom: 20px; /* Add space below the input box */
+}
+
+/* Styles for the button */
 button {
-    background: #fff; /* White background */
-    color: #495057; /* Soft dark gray for text */
-    border: 1px solid #ced4da; /* Border color */
-    margin: 10px 0;
-    padding: 15px;
-    width: 90%;
-    max-width: 400px;
-    border-radius: 20px; /* More pronounced rounded corners for a modern look */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #B8B5FF; /* Pastel purple */
+    color: #FFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 3px 6px #00000029; /* Soft shadow for depth */
+    transition: all 0.3s ease;
 }
 
 /* Hover and focus styles for button for interactivity */
-button:hover,
-button:focus {
-    background-color: #b8d8d8; /* Pastel blue for hover state */
-    color: #495057;
-    outline: none;
+
+button:hover {
+    background-color: #A5A3BB; /* A slightly darker shade for the hover state */
 }
 
-/* Follow-up questions section */
+/* Styles for the verse container */
+.verse-container {
+    background-color: #FFEE93; /* Pastel yellow for the card */
+    box-shadow: 0px 8px 15px #0000001A; /* Soft shadow for depth */
+    border-radius: 15px;
+    padding: 30px;
+    margin-top: 30px; /* Add space above the verse container */
+    font-size: 1.2em;
+}
+
+/* Styles for the follow-up section */
 .follow-up {
-    background: #fef7dd; /* Pastel yellow */
-    color: #495057;
-    border-radius: 10px;
+    background-color: #E4C1F9; /* Pastel lilac for follow-up section */
     padding: 20px;
-    margin: 20px auto;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    display: none;
+    margin-top: 30px; /* Add space above the follow-up section */
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px #0000001A;
 }
 
-/* Button in the follow-up section */
-.button {
-    background-color: #ffafcc; /* Pastel pink */
-    color: #495057;
-    padding: 10px 20px;
-    text-decoration: none;
+/* Styles for the follow-up button */
+.follow-up .button {
+    background-color: #D5ECC2; /* Pastel green */
+    color: #FFF;
+    padding: 10px 25px;
     border-radius: 20px;
-    transition: background-color 0.3s ease;
+    margin-top: 20px;
 }
 
-.button:hover {
-    background-color: #ffc8dd; /* A lighter shade of pastel pink on hover */
+.follow-up .button:hover {
+    background-color: #A5A3BB; /* A slightly darker shade for the hover state */
 }
 
 /* Responsive design adjustments */
