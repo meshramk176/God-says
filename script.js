@@ -20,13 +20,13 @@ document.addEventListener('DOMContentLoaded', function () {
         if (name !== "") {
             var randomIndex = Math.floor(Math.random() * bibleVerses.length);
             var verseDisplay = document.getElementById('verseDisplay');
+            var followUpQuestions = document.getElementById('followUpQuestions');
             verseDisplay.innerText = "Hi " + name + ", God says that " + bibleVerses[randomIndex];
             verseDisplay.style.display = "block";
-            verseDisplay.style.opacity = 0;
-            setTimeout(function () {
+            setTimeout(function () { // Wait for the verse to fade in
                 verseDisplay.style.opacity = 1;
-                verseDisplay.style.transition = 'opacity 2s';
-            }, 10);
+                followUpQuestions.style.display = "block"; // Show the follow-up section
+            }, 2000); // Adjust time as needed
             document.getElementById('nameInputSection').style.display = "none";
         } else {
             alert("Please enter your name.");
