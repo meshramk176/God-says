@@ -13,8 +13,8 @@ body {
     background-image: url('istockphoto-623901114-612x612.jpg'); /* Replace with the path to your image */
     background-size: cover;
     background-position: center;
-    color: #333333; /* Adjust text color if needed for readability */
-    font-size: 1.25em; /* Adjusted font size */
+    color: #FFFFFF; /* Adjust text color if needed for readability */
+    font-size: 1.5em; /* Adjusted font size */
     padding: 40px 20px;
     margin-bottom: 50px;
 }
